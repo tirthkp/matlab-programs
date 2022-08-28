@@ -1,12 +1,7 @@
-c=1;
-Gamma=2.5;
-x=imread('rice.png');
-x1=double(x);      
-y=c*(x1.^Gamma());
 subplot(1,2,1)
-imshow(x)
-title('original')
+f = imread('cameraman.tif');
+g = imadjust (f, [0 1], [1 0]);
+imshow(f);
 subplot(1,2,2)
-imshow((y),[])
-title('transformed img')
+imshow (g);
 fprintf('92000103014 Tirth Patel')

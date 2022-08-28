@@ -1,9 +1,7 @@
-image = imread('cameraman.tif');
-stretched_Image = imadjust(image, stretchlim(image, [0.05, 0.95]),[]);
+f=imread('rice.png');
+g = 1 ./ (1+ (100 ./(double(f) + eps)) .^ 20);
 subplot(1,2,1)
-imshow(image)
-title('Original Image');
+imshow(f)
 subplot(1,2,2)
-imshow(stretched_Image) 
-title('Strethced Image');
+imshow(g)
 fprintf('92000103014 Tirth Patel\n')

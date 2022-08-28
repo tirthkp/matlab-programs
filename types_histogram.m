@@ -59,3 +59,4 @@ title('right slide');
 subplot(5,2,10)
 imhist(w)
 title('right slide');
+fprintf('92000103014 Tirth Patel/n')

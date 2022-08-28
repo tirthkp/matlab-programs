@@ -1,7 +1,9 @@
 subplot(1,2,1)
-load trees
-BW = im2bw(X,map,0.4);
-imshow(X,map)
+I = imread('cameraman.tif');
+imshow(I)
+title('Original gray-scale image')
 subplot(1,2,2)
-imshow(BW)
+bw = im2bw(I,0.5);
+imshow(bw)
+title('Output of im2bw')
 fprintf('92000103014 Tirth Patel\n')
